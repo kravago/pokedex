@@ -1,10 +1,13 @@
 import React from 'react';
 import Pokecard from './Pokecard';
-
+import './Pokedex.css'
 
 const Pokedex =  ({ pokemon }) => {
     return (
-        <div>{pokemon.map(p => <Pokecard pokeInfo={p}/>)}</div>
+        <div className="Pokedex">
+            <h1>Pokedex</h1>
+            {pokemon.map(p => <Pokecard pokeInfo={p}/>)}
+        </div>
     )
 }
 
